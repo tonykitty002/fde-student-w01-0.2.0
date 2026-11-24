@@ -3,3 +3,7 @@
 *.sh text eol=lf
 *.ps1 text eol=crlf
 *.py text eol=lf
+
+# 证据文件按原始字节存储：runtime_evidence.json 记录了对它们的 sha256，
+# 一旦做行尾转换，clone 后校验就会失败。
+artifacts/** -text

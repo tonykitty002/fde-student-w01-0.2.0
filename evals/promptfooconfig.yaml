@@ -4,7 +4,7 @@ prompts:
 providers:
   - id: file://provider.py
     config:
-      pythonExecutable: ../.venv/bin/python
+      pythonExecutable: ../.venv/Scripts/python.exe
 tests:
   - description: Explicit periods and evidence
     vars:

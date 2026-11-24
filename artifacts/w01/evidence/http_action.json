@@ -1,0 +1,72 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "de6663c0-0bce-436a-8313-ca230eb16015",
+  "model_mode": "live",
+  "model_name": "deepseek-flash",
+  "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
+  "status": "completed",
+  "result": {
+    "status": "completed",
+    "summary": "已为样例会员 M001 添加 recall_review 标签：草案经人工确认（approved）后，系统核验执行结果为 applied，标签已生效（label_active 为 true，label_version 为 1）。",
+    "recommendations": [],
+    "evidence_ids": [
+      "145a0903-328e-4ec8-b793-ddf51f72971c"
+    ],
+    "limitations": [
+      "本次仅针对单个会员 M001 的样例标签动作，未涉及消费比较分析",
+      "标签执行结果以系统核验返回的最新状态为准，未验证标签在后续召回流程中的实际使用效果"
+    ]
+  },
+  "observations": [
+    {
+      "name": "prepare_tag",
+      "result": {
+        "status": "awaiting_approval",
+        "draft": {
+          "id": "145a0903-328e-4ec8-b793-ddf51f72971c",
+          "session": "de6663c0-0bce-436a-8313-ca230eb16015",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "hash": "549e333abb96cc79e03b59e82737162796872eca8d42c593fa0b6aa790655b6d",
+          "status": "draft",
+          "result": null
+        }
+      },
+      "call_id": "call_00_NCA6f4cTSmkqslAZ2gdG8579"
+    },
+    {
+      "name": "tag_execution",
+      "result": {
+        "id": "145a0903-328e-4ec8-b793-ddf51f72971c",
+        "session": "de6663c0-0bce-436a-8313-ca230eb16015",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "549e333abb96cc79e03b59e82737162796872eca8d42c593fa0b6aa790655b6d",
+        "status": "applied",
+        "result": {
+          "action_id": "145a0903-328e-4ec8-b793-ddf51f72971c",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 1
+        }
+      }
+    }
+  ],
+  "steps": 2,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 3707,
+    "completion_tokens": 267,
+    "total_tokens": 3974
+  },
+  "trace_id": "c27e98a65d0e67548c814bd812a1b770"
+}
