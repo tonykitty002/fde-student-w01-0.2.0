@@ -9,6 +9,7 @@ node_modules/
 # 凭据与环境文件
 .env
 .env.*
+.model.env
 *.key
 *.pem
 
