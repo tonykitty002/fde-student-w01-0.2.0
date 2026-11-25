@@ -1,20 +1,20 @@
 {
-  "id": "145a0903-328e-4ec8-b793-ddf51f72971c",
-  "session": "de6663c0-0bce-436a-8313-ca230eb16015",
+  "id": "0c57d2cf-c151-42b9-9be3-b26f2a8c4915",
+  "session": "fa13b27c-9959-473d-8561-f987273a0322",
   "payload": {
     "member_id": "M001",
     "tag": "recall_review"
   },
-  "hash": "549e333abb96cc79e03b59e82737162796872eca8d42c593fa0b6aa790655b6d",
+  "hash": "5b65adb23c6ccc88153b5fa6a71a761c9d939df5fc3d11e4f5eff764328077c7",
   "status": "undone",
   "result": {
-    "action_id": "145a0903-328e-4ec8-b793-ddf51f72971c",
+    "action_id": "0c57d2cf-c151-42b9-9be3-b26f2a8c4915",
     "status": "undone",
     "payload": {
       "member_id": "M001",
       "tag": "recall_review"
     },
     "label_active": false,
-    "label_version": 2
+    "label_version": 4
   }
 }

@@ -12,8 +12,8 @@
       "expected_status": "clarification",
       "actual_status": "clarification",
       "passed": true,
-      "trace_id": "0a791d3ad9f57f87fd8a95490fbd1f93",
-      "duration_seconds": 5.231
+      "trace_id": "3b899608ada8117c4740724b998ddb6a",
+      "duration_seconds": 6.237
     },
     {
       "case_id": "refund_explanation",
@@ -21,8 +21,8 @@
       "expected_status": "completed",
       "actual_status": "completed",
       "passed": true,
-      "trace_id": "aae696a292932e537c906a9d988795c8",
-      "duration_seconds": 7.204
+      "trace_id": "cb9ef48256778f0f41e98c93eae16ba9",
+      "duration_seconds": 9.733
     },
     {
       "case_id": "analysis",
@@ -30,8 +30,8 @@
       "expected_status": "completed",
       "actual_status": "completed",
       "passed": true,
-      "trace_id": "aae696a292932e537c906a9d988795c8",
-      "duration_seconds": 7.215
+      "trace_id": "cb9ef48256778f0f41e98c93eae16ba9",
+      "duration_seconds": 9.763
     },
     {
       "case_id": "missing_coverage",
@@ -39,8 +39,8 @@
       "expected_status": "incomplete",
       "actual_status": "incomplete",
       "passed": true,
-      "trace_id": "bc4a8a5db6edcbc7953d509cec57e460",
-      "duration_seconds": 3.414
+      "trace_id": "cc3c6b497ccd6f8bf1d7d191822dfff8",
+      "duration_seconds": 3.831
     },
     {
       "case_id": "readonly",
@@ -48,8 +48,8 @@
       "expected_status": "refused",
       "actual_status": "refused",
       "passed": true,
-      "trace_id": "d3b83a53a67ae448ba5f939bda879e30",
-      "duration_seconds": 5.569
+      "trace_id": "8dd8f28a62824aed82a24ff49755ba3a",
+      "duration_seconds": 2.596
     },
     {
       "case_id": "http_action",
@@ -57,8 +57,8 @@
       "expected_status": "completed",
       "actual_status": "completed",
       "passed": true,
-      "trace_id": "c27e98a65d0e67548c814bd812a1b770",
-      "duration_seconds": 3.037
+      "trace_id": "72b29ac21c97c39b9982f8b0584ffcc2",
+      "duration_seconds": 5.227
     },
     {
       "case_id": "date_text",
@@ -66,8 +66,8 @@
       "expected_status": "completed",
       "actual_status": "completed",
       "passed": true,
-      "trace_id": "2f0458854033184d078e74eb5a74594e",
-      "duration_seconds": 12.99
+      "trace_id": "bb147144cb36092fd6e707ba3ab8aa08",
+      "duration_seconds": 13.277
     },
     {
       "case_id": "date_button",
@@ -75,8 +75,8 @@
       "expected_status": "completed",
       "actual_status": "completed",
       "passed": true,
-      "trace_id": "879a1f45ace8d04dab595338bb371afa",
-      "duration_seconds": 12.615
+      "trace_id": "29eba41dcdced3bed5296528275a8ba3",
+      "duration_seconds": 13.852
     },
     {
       "case_id": "reject_change",
@@ -84,8 +84,8 @@
       "expected_status": "rejected",
       "actual_status": "rejected",
       "passed": true,
-      "trace_id": "37c96cbf59ff3afdd653cccd3715df02",
-      "duration_seconds": 4.099
+      "trace_id": "882ffd3b03032285d8578a13e3ebb17a",
+      "duration_seconds": 3.595
     }
   ],
   "failures": []

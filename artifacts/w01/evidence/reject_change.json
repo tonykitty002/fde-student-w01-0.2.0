@@ -1,7 +1,7 @@
 {
   "product_version": "0.2.0-w1",
   "runtime_revision": "w01-runtime-20260922",
-  "session_id": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+  "session_id": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
   "model_mode": "live",
   "model_name": "deepseek-flash",
   "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -10,7 +10,7 @@
     "status": "rejected",
     "summary": "已拒绝这份标签草案，未执行本次添加操作。你可以继续提出新的要求。",
     "evidence_ids": [
-      "48ca9785-2922-4a02-8eb0-674c5e17010b"
+      "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb"
     ]
   },
   "observations": [
@@ -19,29 +19,29 @@
       "result": {
         "status": "awaiting_approval",
         "draft": {
-          "id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-          "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+          "id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+          "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
           "payload": {
             "member_id": "M004",
             "tag": "recall_review"
           },
-          "hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+          "hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
           "status": "draft",
           "result": null
         }
       },
-      "call_id": "call_00_wn0C58L2GH9IgWVXb6de6269"
+      "call_id": "call_00_fABg2dpdOKq63HILFQvZ4490"
     },
     {
       "name": "tag_rejection",
       "result": {
-        "id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-        "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+        "id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+        "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
         "payload": {
           "member_id": "M004",
           "tag": "recall_review"
         },
-        "hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+        "hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
         "status": "rejected",
         "result": null
       }
@@ -50,11 +50,11 @@
   "steps": 1,
   "output_repairs": 0,
   "usage": {
-    "prompt_tokens": 3590,
-    "completion_tokens": 344,
-    "total_tokens": 3934
+    "prompt_tokens": 3629,
+    "completion_tokens": 262,
+    "total_tokens": 3891
   },
-  "trace_id": "37c96cbf59ff3afdd653cccd3715df02",
+  "trace_id": "882ffd3b03032285d8578a13e3ebb17a",
   "scenario": "reject_change",
   "scenario_passed": true,
   "checks": {
@@ -70,7 +70,7 @@
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+      "session_id": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -82,32 +82,32 @@
           "result": {
             "status": "awaiting_approval",
             "draft": {
-              "id": "9c5cc46b-e92a-495a-b90f-cbd24817b481",
-              "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+              "id": "c2cacb4d-2b05-4c43-a923-9139b734cc18",
+              "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
               "payload": {
                 "member_id": "M001",
                 "tag": "recall_review"
               },
-              "hash": "9a82db9f6da27c3f79f08ac53a4b54b447c828cfc4577728588575b54cd28b63",
+              "hash": "0277acb0883add7dbb384ba51eadca990caf77479ad48e7ce686d4a97a0752cb",
               "status": "draft",
               "result": null
             }
           },
-          "call_id": "call_00_9GaBHzDLP5OqtgtvdpqL8276"
+          "call_id": "call_00_yTVnbmlTzp8JWKp0e88o3319"
         }
       ],
       "steps": 1,
       "output_repairs": 0,
       "usage": {
         "prompt_tokens": 1621,
-        "completion_tokens": 114,
-        "total_tokens": 1735
+        "completion_tokens": 150,
+        "total_tokens": 1771
       },
-      "trace_id": "d5ca752a697e4a73acafc0a2d00b534b",
+      "trace_id": "b44749060ea723e45950cb835454ea5e",
       "confirmation": {
         "kind": "tag_confirmation",
-        "draft_id": "9c5cc46b-e92a-495a-b90f-cbd24817b481",
-        "draft_hash": "9a82db9f6da27c3f79f08ac53a4b54b447c828cfc4577728588575b54cd28b63",
+        "draft_id": "c2cacb4d-2b05-4c43-a923-9139b734cc18",
+        "draft_hash": "0277acb0883add7dbb384ba51eadca990caf77479ad48e7ce686d4a97a0752cb",
         "payload": {
           "member_id": "M001",
           "tag": "recall_review"
@@ -118,7 +118,7 @@
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+      "session_id": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -127,7 +127,7 @@
         "status": "rejected",
         "summary": "已拒绝这份标签草案，未执行本次添加操作。你可以继续提出新的要求。",
         "evidence_ids": [
-          "9c5cc46b-e92a-495a-b90f-cbd24817b481"
+          "c2cacb4d-2b05-4c43-a923-9139b734cc18"
         ]
       },
       "observations": [
@@ -136,29 +136,29 @@
           "result": {
             "status": "awaiting_approval",
             "draft": {
-              "id": "9c5cc46b-e92a-495a-b90f-cbd24817b481",
-              "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+              "id": "c2cacb4d-2b05-4c43-a923-9139b734cc18",
+              "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
               "payload": {
                 "member_id": "M001",
                 "tag": "recall_review"
               },
-              "hash": "9a82db9f6da27c3f79f08ac53a4b54b447c828cfc4577728588575b54cd28b63",
+              "hash": "0277acb0883add7dbb384ba51eadca990caf77479ad48e7ce686d4a97a0752cb",
               "status": "draft",
               "result": null
             }
           },
-          "call_id": "call_00_9GaBHzDLP5OqtgtvdpqL8276"
+          "call_id": "call_00_yTVnbmlTzp8JWKp0e88o3319"
         },
         {
           "name": "tag_rejection",
           "result": {
-            "id": "9c5cc46b-e92a-495a-b90f-cbd24817b481",
-            "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+            "id": "c2cacb4d-2b05-4c43-a923-9139b734cc18",
+            "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
             "payload": {
               "member_id": "M001",
               "tag": "recall_review"
             },
-            "hash": "9a82db9f6da27c3f79f08ac53a4b54b447c828cfc4577728588575b54cd28b63",
+            "hash": "0277acb0883add7dbb384ba51eadca990caf77479ad48e7ce686d4a97a0752cb",
             "status": "rejected",
             "result": null
           }
@@ -168,15 +168,15 @@
       "output_repairs": 0,
       "usage": {
         "prompt_tokens": 1621,
-        "completion_tokens": 114,
-        "total_tokens": 1735
+        "completion_tokens": 150,
+        "total_tokens": 1771
       },
-      "trace_id": "158a62da582d0a2ea7cb27c9657efc4b"
+      "trace_id": "01fa72e62647256b8c0af0c3bca37775"
     },
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+      "session_id": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -188,32 +188,32 @@
           "result": {
             "status": "awaiting_approval",
             "draft": {
-              "id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-              "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+              "id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+              "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
               "payload": {
                 "member_id": "M004",
                 "tag": "recall_review"
               },
-              "hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+              "hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
               "status": "draft",
               "result": null
             }
           },
-          "call_id": "call_00_wn0C58L2GH9IgWVXb6de6269"
+          "call_id": "call_00_fABg2dpdOKq63HILFQvZ4490"
         }
       ],
       "steps": 1,
       "output_repairs": 0,
       "usage": {
-        "prompt_tokens": 1969,
-        "completion_tokens": 230,
-        "total_tokens": 2199
+        "prompt_tokens": 2008,
+        "completion_tokens": 112,
+        "total_tokens": 2120
       },
-      "trace_id": "91f61479fcc1a212611496413094381e",
+      "trace_id": "c4d1311655749a9912aee7a8922cab01",
       "confirmation": {
         "kind": "tag_confirmation",
-        "draft_id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-        "draft_hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+        "draft_id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+        "draft_hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
         "payload": {
           "member_id": "M004",
           "tag": "recall_review"
@@ -224,7 +224,7 @@
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+      "session_id": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -233,7 +233,7 @@
         "status": "rejected",
         "summary": "已拒绝这份标签草案，未执行本次添加操作。你可以继续提出新的要求。",
         "evidence_ids": [
-          "48ca9785-2922-4a02-8eb0-674c5e17010b"
+          "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb"
         ]
       },
       "observations": [
@@ -242,29 +242,29 @@
           "result": {
             "status": "awaiting_approval",
             "draft": {
-              "id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-              "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+              "id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+              "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
               "payload": {
                 "member_id": "M004",
                 "tag": "recall_review"
               },
-              "hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+              "hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
               "status": "draft",
               "result": null
             }
           },
-          "call_id": "call_00_wn0C58L2GH9IgWVXb6de6269"
+          "call_id": "call_00_fABg2dpdOKq63HILFQvZ4490"
         },
         {
           "name": "tag_rejection",
           "result": {
-            "id": "48ca9785-2922-4a02-8eb0-674c5e17010b",
-            "session": "8153a852-cfba-4d83-b8f1-88e651f6ffcb",
+            "id": "77f2bf8d-9e5e-40bc-a1e3-6b944245adfb",
+            "session": "5daed216-e56c-41a5-8d79-6dbe13eead9e",
             "payload": {
               "member_id": "M004",
               "tag": "recall_review"
             },
-            "hash": "151ae17ff9644c4bb95470c937c72a566e95963a425ab6f75c34f344c404d6e2",
+            "hash": "0153fa6fd01b0ec262e8b539e01e6eb77ea1ce526704bbaf7287218845be8a53",
             "status": "rejected",
             "result": null
           }
@@ -273,11 +273,11 @@
       "steps": 1,
       "output_repairs": 0,
       "usage": {
-        "prompt_tokens": 1969,
-        "completion_tokens": 230,
-        "total_tokens": 2199
+        "prompt_tokens": 2008,
+        "completion_tokens": 112,
+        "total_tokens": 2120
       },
-      "trace_id": "37c96cbf59ff3afdd653cccd3715df02"
+      "trace_id": "882ffd3b03032285d8578a13e3ebb17a"
     }
   ],
   "model_calls": 2

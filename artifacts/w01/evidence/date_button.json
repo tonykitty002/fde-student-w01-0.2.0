@@ -1,7 +1,7 @@
 {
   "product_version": "0.2.0-w1",
   "runtime_revision": "w01-runtime-20260922",
-  "session_id": "6b34e446-049b-4ade-9502-63d4927ca91f",
+  "session_id": "d545be0b-1823-4ff8-93b6-316686bac8ee",
   "model_mode": "live",
   "model_name": "deepseek-flash",
   "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -12,17 +12,17 @@
     "recommendations": [
       {
         "member_id": "M001",
-        "suggestion": "安排门店运营人员电话回访，了解近期需求变化；回访后可人工审核是否纳入高价值会员关怀名单，并由运营人员决定是否提供定向权益。",
+        "suggestion": "由运营人员人工复核该会员当前期的退款与取消记录后，再决定是否纳入召回名单，并考虑通过门店或企业微信做一对一沟通，了解其购买体验问题。",
         "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 1000 元变为 400 元，下降 60%。基准时段有 1 笔已支付订单，支付 1000 元，退款 0 元，净消费 1000 元。比较时段有 2 笔已支付订单（其中 1 笔全额退款，已包含在已支付笔数内），支付 500 元，退款 100 元，净消费 400 元；另有 1 笔取消订单未计入。"
       },
       {
         "member_id": "M004",
-        "suggestion": "由运营人员安排一次主动触达，确认是否有未满足的需求，并人工评估是否列入唤醒名单。",
+        "suggestion": "建议纳入人工审核的召回名单，由运营人员通过门店或企业微信做一次回访触达，确认其是否有未满足的需求后再安排跟进。",
         "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 400 元变为 0 元，下降 100%。基准时段有 1 笔已支付订单，支付 400 元，退款 0 元，净消费 400 元。比较时段没有已支付订单，净消费为 0 元。"
       },
       {
         "member_id": "M007",
-        "suggestion": "优先安排低门槛的小额复购引导，并由运营人员人工审核是否加入唤醒名单。",
+        "suggestion": "建议纳入人工审核的轻量召回名单，用常规会员权益提醒方式触达，观察其后续是否有复购动作，避免高频打扰。",
         "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 100 元变为 0 元，下降 100%。基准时段有 1 笔已支付订单，支付 100 元，退款 0 元，净消费 100 元。比较时段没有已支付订单，净消费为 0 元。"
       }
     ],
@@ -327,101 +327,17 @@
         ],
         "business_reference_date": "2026-09-01"
       },
-      "call_id": "call_00_qdgeuYFV8Nod4ptzrfbL5389"
-    },
-    {
-      "name": "member_history",
-      "result": {
-        "status": "ok",
-        "member": {
-          "member_id": "M001",
-          "store_id": "S01",
-          "joined_at": "2025-01-01"
-        },
-        "orders": [
-          {
-            "order_id": "O0010",
-            "paid_at": "2026-07-10",
-            "paid_cents": 100000,
-            "refunded_cents": 0,
-            "status": "paid"
-          },
-          {
-            "order_id": "O0011",
-            "paid_at": "2026-08-10",
-            "paid_cents": 40000,
-            "refunded_cents": 0,
-            "status": "paid"
-          },
-          {
-            "order_id": "OREF",
-            "paid_at": "2026-08-12",
-            "paid_cents": 10000,
-            "refunded_cents": 10000,
-            "status": "paid"
-          },
-          {
-            "order_id": "OCANCEL",
-            "paid_at": "2026-08-13",
-            "paid_cents": 99900,
-            "refunded_cents": 0,
-            "status": "cancelled"
-          }
-        ]
-      },
-      "call_id": "call_00_FdWfrZsW4DWvaTFxf4H18177"
-    },
-    {
-      "name": "member_history",
-      "result": {
-        "status": "ok",
-        "member": {
-          "member_id": "M004",
-          "store_id": "S01",
-          "joined_at": "2025-01-01"
-        },
-        "orders": [
-          {
-            "order_id": "O0040",
-            "paid_at": "2026-07-10",
-            "paid_cents": 40000,
-            "refunded_cents": 0,
-            "status": "paid"
-          }
-        ]
-      },
-      "call_id": "call_01_jyiIRrl4RkQYCDBucGnU4952"
-    },
-    {
-      "name": "member_history",
-      "result": {
-        "status": "ok",
-        "member": {
-          "member_id": "M007",
-          "store_id": "S02",
-          "joined_at": "2025-01-01"
-        },
-        "orders": [
-          {
-            "order_id": "O0070",
-            "paid_at": "2026-07-10",
-            "paid_cents": 10000,
-            "refunded_cents": 0,
-            "status": "paid"
-          }
-        ]
-      },
-      "call_id": "call_02_7mdS6xNhDxiUjMxtX8749029"
+      "call_id": "call_00_ET_BWjgVUCaNC57qmhrk3ul4205"
     }
   ],
-  "steps": 3,
+  "steps": 2,
   "output_repairs": 0,
   "usage": {
-    "prompt_tokens": 16029,
-    "completion_tokens": 1961,
-    "total_tokens": 17990
+    "prompt_tokens": 20219,
+    "completion_tokens": 1938,
+    "total_tokens": 22157
   },
-  "trace_id": "879a1f45ace8d04dab595338bb371afa",
+  "trace_id": "29eba41dcdced3bed5296528275a8ba3",
   "scenario": "date_button",
   "scenario_passed": true,
   "checks": {
@@ -433,7 +349,7 @@
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "6b34e446-049b-4ade-9502-63d4927ca91f",
+      "session_id": "d545be0b-1823-4ff8-93b6-316686bac8ee",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -444,8 +360,9 @@
         "recommendations": [],
         "evidence_ids": [],
         "limitations": [
-          "尚未执行消费比较，未产生证据",
-          "请先在上方日期方案中选择或输入明确日期；随后再查询并给出召回建议"
+          "比较时段未确认，尚未执行任何消费比较查询",
+          "S03 门店 8 月无数据覆盖，缺失不能当作消费为零，结论不能推广到该门店",
+          "当前为只读分析模式，无标签或发券动作权限"
         ]
       },
       "observations": [
@@ -514,17 +431,92 @@
             ],
             "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
           },
-          "call_id": "call_00_yGSs3ift2LOab0zQZ6G37322"
+          "call_id": "call_00_zoVRUQDaE3ipyan7fr8j9713"
+        },
+        {
+          "name": "compare_spending",
+          "result": {
+            "status": "error",
+            "code": "TIME_RANGE_NOT_CONFIRMED"
+          },
+          "call_id": "call_00_csDnqQbIyDw9nanLp8c58827"
+        },
+        {
+          "name": "describe_business",
+          "result": {
+            "status": "ok",
+            "semantics": {
+              "version": "sample-semantics-1",
+              "company": "松果生活（独立虚构样例）",
+              "objects": [
+                "Member",
+                "Order",
+                "Store",
+                "Tag"
+              ],
+              "links": [
+                "Member belongs_to Store",
+                "Order belongs_to Member"
+              ],
+              "spend": {
+                "id": "sample.net_spend.v1",
+                "aggregation": "paid_minus_refunded_cents",
+                "unit": "CNY cents",
+                "include": "status=paid",
+                "window": "start inclusive, end exclusive"
+              },
+              "old_member": {
+                "basis": "joined_before_baseline"
+              },
+              "decline": {
+                "minimum_pct": 20,
+                "formula": "(baseline-current)/baseline*100",
+                "zero_baseline": "undefined; excluded from decline cohort"
+              },
+              "recommendation_constraints": [
+                "只提出可供运营人员审核的建议，不承诺召回效果",
+                "未获得确认不执行标签动作",
+                "不声称已经发券",
+                "引用工具 evidence_id，金额只能来自工具结果"
+              ]
+            },
+            "dataset": {
+              "dataset_version": "sample-1",
+              "business_reference_date": "2026-09-01",
+              "fictional": true,
+              "company": "松果生活",
+              "description": "独立于青禾。2026 年 7 月与 8 月；S03 的 8 月没有数据覆盖，不可当作消费为零。"
+            },
+            "coverage": [
+              {
+                "store_id": "S01",
+                "start": "2026-07-01",
+                "end": "2026-09-01"
+              },
+              {
+                "store_id": "S02",
+                "start": "2026-07-01",
+                "end": "2026-09-01"
+              },
+              {
+                "store_id": "S03",
+                "start": "2026-07-01",
+                "end": "2026-08-01"
+              }
+            ],
+            "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
+          },
+          "call_id": "call_00_Xz5AwU6NOo1WA762v6ze2752"
         }
       ],
-      "steps": 2,
-      "output_repairs": 0,
+      "steps": 5,
+      "output_repairs": 1,
       "usage": {
-        "prompt_tokens": 3430,
-        "completion_tokens": 907,
-        "total_tokens": 4337
+        "prompt_tokens": 11721,
+        "completion_tokens": 971,
+        "total_tokens": 12692
       },
-      "trace_id": "705a61286578bcb2d10430086bd6d3bd",
+      "trace_id": "96ea56fba78e31e7df9818c26d0419b3",
       "time_options": [
         {
           "id": "T1",
@@ -539,42 +531,14 @@
             ]
           ],
           "label": "基准 2026-07-01 至 2026-08-01；比较 2026-08-01 至 2026-09-01（均不含结束日）"
-        },
-        {
-          "id": "T2",
-          "windows": [
-            [
-              "2026-07-15",
-              "2026-08-01"
-            ],
-            [
-              "2026-08-15",
-              "2026-09-01"
-            ]
-          ],
-          "label": "基准 2026-07-15 至 2026-08-01；比较 2026-08-15 至 2026-09-01（均不含结束日）"
-        },
-        {
-          "id": "T3",
-          "windows": [
-            [
-              "2026-08-01",
-              "2026-08-16"
-            ],
-            [
-              "2026-08-16",
-              "2026-09-01"
-            ]
-          ],
-          "label": "基准 2026-08-01 至 2026-08-16；比较 2026-08-16 至 2026-09-01（均不含结束日）"
         }
       ],
-      "time_options_token": "162a30a225364130b7a8554fcd542bbc"
+      "time_options_token": "c62eddb1ebf946f1b0b2f456b2136a85"
     },
     {
       "product_version": "0.2.0-w1",
       "runtime_revision": "w01-runtime-20260922",
-      "session_id": "6b34e446-049b-4ade-9502-63d4927ca91f",
+      "session_id": "d545be0b-1823-4ff8-93b6-316686bac8ee",
       "model_mode": "live",
       "model_name": "deepseek-flash",
       "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -585,17 +549,17 @@
         "recommendations": [
           {
             "member_id": "M001",
-            "suggestion": "安排门店运营人员电话回访，了解近期需求变化；回访后可人工审核是否纳入高价值会员关怀名单，并由运营人员决定是否提供定向权益。",
+            "suggestion": "由运营人员人工复核该会员当前期的退款与取消记录后，再决定是否纳入召回名单，并考虑通过门店或企业微信做一对一沟通，了解其购买体验问题。",
             "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 1000 元变为 400 元，下降 60%。基准时段有 1 笔已支付订单，支付 1000 元，退款 0 元，净消费 1000 元。比较时段有 2 笔已支付订单（其中 1 笔全额退款，已包含在已支付笔数内），支付 500 元，退款 100 元，净消费 400 元；另有 1 笔取消订单未计入。"
           },
           {
             "member_id": "M004",
-            "suggestion": "由运营人员安排一次主动触达，确认是否有未满足的需求，并人工评估是否列入唤醒名单。",
+            "suggestion": "建议纳入人工审核的召回名单，由运营人员通过门店或企业微信做一次回访触达，确认其是否有未满足的需求后再安排跟进。",
             "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 400 元变为 0 元，下降 100%。基准时段有 1 笔已支付订单，支付 400 元，退款 0 元，净消费 400 元。比较时段没有已支付订单，净消费为 0 元。"
           },
           {
             "member_id": "M007",
-            "suggestion": "优先安排低门槛的小额复购引导，并由运营人员人工审核是否加入唤醒名单。",
+            "suggestion": "建议纳入人工审核的轻量召回名单，用常规会员权益提醒方式触达，观察其后续是否有复购动作，避免高频打扰。",
             "rationale": "基准时段 2026-07-01 至 2026-08-01，比较时段 2026-08-01 至 2026-09-01（均不含结束日）。净消费从 100 元变为 0 元，下降 100%。基准时段有 1 笔已支付订单，支付 100 元，退款 0 元，净消费 100 元。比较时段没有已支付订单，净消费为 0 元。"
           }
         ],
@@ -900,102 +864,18 @@
             ],
             "business_reference_date": "2026-09-01"
           },
-          "call_id": "call_00_qdgeuYFV8Nod4ptzrfbL5389"
-        },
-        {
-          "name": "member_history",
-          "result": {
-            "status": "ok",
-            "member": {
-              "member_id": "M001",
-              "store_id": "S01",
-              "joined_at": "2025-01-01"
-            },
-            "orders": [
-              {
-                "order_id": "O0010",
-                "paid_at": "2026-07-10",
-                "paid_cents": 100000,
-                "refunded_cents": 0,
-                "status": "paid"
-              },
-              {
-                "order_id": "O0011",
-                "paid_at": "2026-08-10",
-                "paid_cents": 40000,
-                "refunded_cents": 0,
-                "status": "paid"
-              },
-              {
-                "order_id": "OREF",
-                "paid_at": "2026-08-12",
-                "paid_cents": 10000,
-                "refunded_cents": 10000,
-                "status": "paid"
-              },
-              {
-                "order_id": "OCANCEL",
-                "paid_at": "2026-08-13",
-                "paid_cents": 99900,
-                "refunded_cents": 0,
-                "status": "cancelled"
-              }
-            ]
-          },
-          "call_id": "call_00_FdWfrZsW4DWvaTFxf4H18177"
-        },
-        {
-          "name": "member_history",
-          "result": {
-            "status": "ok",
-            "member": {
-              "member_id": "M004",
-              "store_id": "S01",
-              "joined_at": "2025-01-01"
-            },
-            "orders": [
-              {
-                "order_id": "O0040",
-                "paid_at": "2026-07-10",
-                "paid_cents": 40000,
-                "refunded_cents": 0,
-                "status": "paid"
-              }
-            ]
-          },
-          "call_id": "call_01_jyiIRrl4RkQYCDBucGnU4952"
-        },
-        {
-          "name": "member_history",
-          "result": {
-            "status": "ok",
-            "member": {
-              "member_id": "M007",
-              "store_id": "S02",
-              "joined_at": "2025-01-01"
-            },
-            "orders": [
-              {
-                "order_id": "O0070",
-                "paid_at": "2026-07-10",
-                "paid_cents": 10000,
-                "refunded_cents": 0,
-                "status": "paid"
-              }
-            ]
-          },
-          "call_id": "call_02_7mdS6xNhDxiUjMxtX8749029"
+          "call_id": "call_00_ET_BWjgVUCaNC57qmhrk3ul4205"
         }
       ],
-      "steps": 3,
+      "steps": 2,
       "output_repairs": 0,
       "usage": {
-        "prompt_tokens": 12599,
-        "completion_tokens": 1054,
-        "total_tokens": 13653
+        "prompt_tokens": 8498,
+        "completion_tokens": 967,
+        "total_tokens": 9465
       },
-      "trace_id": "879a1f45ace8d04dab595338bb371afa"
+      "trace_id": "29eba41dcdced3bed5296528275a8ba3"
     }
   ],
-  "model_calls": 5
+  "model_calls": 7
 }

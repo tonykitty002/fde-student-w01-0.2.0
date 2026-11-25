@@ -1,7 +1,7 @@
 {
   "product_version": "0.2.0-w1",
   "runtime_revision": "w01-runtime-20260922",
-  "session_id": "476e3d0c-cabb-4545-86d5-ee96c64ee48e",
+  "session_id": "f3a0eeb2-b04d-482c-8a64-008aa5518f55",
   "model_mode": "live",
   "model_name": "deepseek-flash",
   "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
@@ -12,8 +12,8 @@
     "recommendations": [],
     "evidence_ids": [],
     "limitations": [
-      "尚未执行任何消费比较查询，结论需以工具结果为准",
-      "S03 的 8 月无数据覆盖，涉及时段的结论不推广到该门店"
+      "尚未确认比较时段，未执行任何消费对比查询",
+      "S03 在 2026-08 无数据覆盖，若选择含 8 月的方案，该门店结论不适用且不会推及其门店"
     ]
   },
   "observations": [
@@ -82,17 +82,84 @@
         ],
         "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
       },
-      "call_id": "call_00_gt5a9m4aBYW98RmEQSrx2134"
+      "call_id": "call_00_lVGLvwGPwtHioI68w6PQ7071"
+    },
+    {
+      "name": "describe_business",
+      "result": {
+        "status": "ok",
+        "semantics": {
+          "version": "sample-semantics-1",
+          "company": "松果生活（独立虚构样例）",
+          "objects": [
+            "Member",
+            "Order",
+            "Store",
+            "Tag"
+          ],
+          "links": [
+            "Member belongs_to Store",
+            "Order belongs_to Member"
+          ],
+          "spend": {
+            "id": "sample.net_spend.v1",
+            "aggregation": "paid_minus_refunded_cents",
+            "unit": "CNY cents",
+            "include": "status=paid",
+            "window": "start inclusive, end exclusive"
+          },
+          "old_member": {
+            "basis": "joined_before_baseline"
+          },
+          "decline": {
+            "minimum_pct": 20,
+            "formula": "(baseline-current)/baseline*100",
+            "zero_baseline": "undefined; excluded from decline cohort"
+          },
+          "recommendation_constraints": [
+            "只提出可供运营人员审核的建议，不承诺召回效果",
+            "未获得确认不执行标签动作",
+            "不声称已经发券",
+            "引用工具 evidence_id，金额只能来自工具结果"
+          ]
+        },
+        "dataset": {
+          "dataset_version": "sample-1",
+          "business_reference_date": "2026-09-01",
+          "fictional": true,
+          "company": "松果生活",
+          "description": "独立于青禾。2026 年 7 月与 8 月；S03 的 8 月没有数据覆盖，不可当作消费为零。"
+        },
+        "coverage": [
+          {
+            "store_id": "S01",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S02",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S03",
+            "start": "2026-07-01",
+            "end": "2026-08-01"
+          }
+        ],
+        "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
+      },
+      "call_id": "call_00_YUin4QnKWwUPbR2yL5pR3368"
     }
   ],
   "steps": 3,
-  "output_repairs": 1,
+  "output_repairs": 0,
   "usage": {
-    "prompt_tokens": 5967,
-    "completion_tokens": 842,
-    "total_tokens": 6809
+    "prompt_tokens": 6307,
+    "completion_tokens": 860,
+    "total_tokens": 7167
   },
-  "trace_id": "0a791d3ad9f57f87fd8a95490fbd1f93",
+  "trace_id": "3b899608ada8117c4740724b998ddb6a",
   "time_options": [
     {
       "id": "T1",
@@ -116,26 +183,26 @@
           "2026-07-16"
         ],
         [
-          "2026-08-16",
-          "2026-08-31"
+          "2026-08-01",
+          "2026-08-16"
         ]
       ],
-      "label": "基准 2026-07-01 至 2026-07-16；比较 2026-08-16 至 2026-08-31（均不含结束日）"
+      "label": "基准 2026-07-01 至 2026-07-16；比较 2026-08-01 至 2026-08-16（均不含结束日）"
     },
     {
       "id": "T3",
       "windows": [
         [
-          "2026-07-16",
-          "2026-08-01"
+          "2026-07-01",
+          "2026-07-16"
         ],
         [
-          "2026-08-01",
-          "2026-08-16"
+          "2026-07-16",
+          "2026-07-31"
         ]
       ],
-      "label": "基准 2026-07-16 至 2026-08-01；比较 2026-08-01 至 2026-08-16（均不含结束日）"
+      "label": "基准 2026-07-01 至 2026-07-16；比较 2026-07-16 至 2026-07-31（均不含结束日）"
     }
   ],
-  "time_options_token": "882ef1e00d66473fa0f6f6154b8ada65"
+  "time_options_token": "7e6707f5beda4bf9b64e4ef90317802b"
 }
