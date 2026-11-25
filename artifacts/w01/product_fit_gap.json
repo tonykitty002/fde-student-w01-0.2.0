@@ -1,0 +1,131 @@
+{
+  "contract_version": "w01-0.2.1",
+  "product_version": "0.2.0-w1",
+  "capability_matrix_version": "w1-capabilities-0.2.0",
+  "items": [
+    {
+      "id": "GAP-001",
+      "request": "三个月内要看到会员复购率止跌回升，不是只求不下滑；提升幅度与验收口径尚未确定",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "访谈记录 W1-interview-83fcd0c3（ROLE-SHEN）",
+          "locator": "MSG-06514、MSG-06518",
+          "note": "沈总明确目标是复购率止跌回升，提升幅度与验收口径未定"
+        }
+      ],
+      "next_step": "与沈总确认提升幅度、起算时间与验收口径；与数据同事核实复购率算法，再判断标准净消费能力能否覆盖"
+    },
+    {
+      "id": "GAP-002",
+      "request": "会员复购率连续四个季度下滑，沈总判断主因是会员老化，要求项目组核实",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "访谈记录 W1-interview-83fcd0c3（ROLE-SHEN）",
+          "locator": "MSG-06516、MSG-06520",
+          "note": "沈总称复购连续四季度下滑、判断为会员老化，计算口径需项目组核实"
+        }
+      ],
+      "next_step": "先取近四个季度复购数据核对口径；把会员老化作为待验假设，不直接当作结论"
+    },
+    {
+      "id": "GAP-003",
+      "request": "对 80 万活跃会员做分类、分级与画像，为运营提供数据支撑",
+      "category": "产品缺口",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "访谈记录 W1-interview-83fcd0c3（ROLE-SHEN）",
+          "locator": "MSG-06517",
+          "note": "提出对 80 万会员做分类、分级与画像构建"
+        }
+      ],
+      "next_step": "与运营小林确认分级维度与可用字段；标准产品只有会员-门店-订单，无画像字段"
+    },
+    {
+      "id": "GAP-004",
+      "request": "识别需要重点经营的老会员，并直接给出可执行的运营建议，避免运营再另整一套表",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-001",
+        "CAP-003",
+        "CAP-004"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "工程运行记录 artifacts/w01/evidence/analysis.json",
+          "locator": "runtime_evidence.json 用例 analysis",
+          "note": "实测 2026 年 7 月与 8 月老会员净消费比较，返回 M001/M004/M007 及召回建议与依据"
+        },
+        {
+          "source": "产品能力矩阵 product/capabilities.json",
+          "locator": "CAP-001、CAP-003、CAP-004",
+          "note": "能力矩阵声明模型执行内核、工具参数校验、样例数据净消费比较均为已实现"
+        }
+      ],
+      "next_step": "待接入青禾数据后按同一口径复跑；补充建议采纳情况的反馈渠道"
+    },
+    {
+      "id": "GAP-005",
+      "request": "消费下降与推送策略相关，评估是否可通过加强推送拉动老会员消费",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "访谈记录 W1-interview-83fcd0c3（ROLE-SHEN）",
+          "locator": "MSG-06515、MSG-06516",
+          "note": "用户提出推送策略与消费下降相关，沈总回应相关不等于原因、需核实数据"
+        }
+      ],
+      "next_step": "先对照推送触达记录与订单时间序列验证相关性，再谈因果；需运营提供推送数据"
+    },
+    {
+      "id": "GAP-006",
+      "request": "接入青禾优选真实系统与会员数据，系统情况找老周",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-004"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "立项邮件 MAIL-W01-001",
+          "locator": "邮件正文第 4 段",
+          "note": "系统情况找老周、运营找小林、门店找陈姐，说明系统接入需客户侧配合"
+        }
+      ],
+      "next_step": "与老周确认系统清单、数据表结构、更新频率与授权范围；样例数据不能替代客户数据"
+    },
+    {
+      "id": "GAP-007",
+      "request": "三个月是期望见效时间而非合同期限，需先讲清起算条件与可先交付范围",
+      "category": "待判断",
+      "capability_ids": [],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "访谈记录 W1-interview-83fcd0c3（ROLE-SHEN）",
+          "locator": "MSG-06518",
+          "note": "三个月是希望看到效果的时间，不是已定死的合同期限"
+        }
+      ],
+      "next_step": "与沈总、王经理确认起算条件、验收节点与可先交付范围，再排期"
+    }
+  ]
+}
